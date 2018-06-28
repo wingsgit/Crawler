@@ -86,6 +86,7 @@ def getcontent(listurl,proxy):
                     thiscontent=content[0]
                 dataall = "标题为"+ thistitle +"\n"+"内容为:"+ thiscontent
                 fh.write(dataall.encode("utf-8"))
+                fh.close()
             except urllib.error.URLError as e:
                 if hasattr(e, "code"):
                     print(e.code)
