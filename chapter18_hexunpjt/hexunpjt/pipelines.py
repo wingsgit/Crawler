@@ -9,7 +9,7 @@ import MySQLdb as db
 
 class HexunpjtPipeline(object):
     def __init__(self):
-        self.conn = db.connect('localhost', 'root', 'awpak47m4a1', 'hexun', charset='utf8',
+        self.conn = db.connect('localhost', 'root', '*************', 'h***n', charset='utf8',
                                use_unicode=True)  # 建立mysql连接
         print(self.conn)
         print("database connect success!")
