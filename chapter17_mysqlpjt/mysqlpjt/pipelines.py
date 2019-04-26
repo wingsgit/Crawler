@@ -9,7 +9,7 @@ import MySQLdb as db
 
 class MysqlpjtPipeline(object):
     def __init__(self):
-        self.conn = db.connect('localhost','root','awpak47m4a1','skyeagle',charset='utf8',use_unicode=True) #建立mysql连接
+        self.conn = db.connect('localhost','root','***************','*********',charset='utf8',use_unicode=True) #建立mysql连接
         print(self.conn)
         print("database connect success!")
         self.cursor = self.conn.cursor()   #建立游标
